@@ -49,16 +49,23 @@
 @media (max-width: 768px) {
     .svg {
         filter: invert(12%) sepia(10%) saturate(175%) hue-rotate(349deg) brightness(10%) contrast(88%);
-        margin-top: -380px;
-        width: 45%;
+        margin-top: -430px;
+        width: 35%;
     }
     .bibimbapImg {
         margin-top: 50px;
+        width: 70% !important;
     }
     .kimbap {
-        width: 60% !important;
+        width: 50% !important;
     }
     .dumplingImg {
-        width: 80% !important;
+        width: 70% !important;
+    }
+    .navText {
+        font-size: 30px !important;
+    }
+    .facade {
+        width: 70% !important;
     }
 }
