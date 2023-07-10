@@ -128,16 +128,16 @@
         margin-bottom: 0;
     }
     .noodleText p {
-        width: 40vw;
-        font-size: 12px;
+        width: 60vw;
+        font-size: 20px;
     }
     .noodleText h1 {
-        font-size: 25px !important;
-        margin-top: 40px;
+        font-size: 35px !important;
+        margin-top: 50px;
         line-height: 20px;
     }
     .noodleText h2 {
-        font-size: 17px !important;
+        font-size: 23px !important;
         margin-bottom: 30px !important;
         margin-top: 0;
     }
@@ -156,7 +156,7 @@
         margin-bottom: 150px;
     }
     .titrePara {
-        font-size: 20px;
+        font-size: 30px;
     }
     .bimPara {
         margin: 0;
@@ -164,28 +164,30 @@
     }
     .imgPara {
         margin: 0;
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
     }
     .paraTitre {
-        font-size: 18px !important;
-        width: 65vw !important;
-        line-height: 17px;
+        font-size: 25px !important;
+        width: 90vw !important;
+        line-height: 25px;
     }
     .paraTitre2 {
-        font-size: 15px !important;
+        font-size: 25px !important;
         margin-top: 10px;
         margin-bottom: 40px;
-        width: 50vw !important;
+        width: 80vw !important;
     }
     .noodleText .h2 {
         margin-top: 20px !important;
         font-family: 'sugo_pro_display' !important;
         font-weight: bolder !important;
-        font-size: 15px !important
+        font-size: 25px !important;
+        margin-bottom: 70px !important;
     }
     .bimPara {
         height: 200px;
+        margin-bottom: 100px;
     }
     .textContainer {
         margin-bottom: 100px;
@@ -193,20 +195,15 @@
 
     .imgBgBbimbap {
         position: relative;
-        width: 60%;
+        width: 90%;
         margin-left: 0;
-        margin-top: 0;
+        margin-top: 50px !important;
     }
     .imgBgBbimbap2 {
         display: none;
     }
     .h2ko2 {
         display: none;
-    }
-
-    .navbar-burger {
-        right: 60px !important;
-        top: 0px !important;
     }
 }
 
