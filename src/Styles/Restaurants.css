@@ -195,4 +195,7 @@ iframe {
         align-items: center;
         padding-top: 0;
     }
+    iframe {
+        height: 200px !important;
+    }
 }
