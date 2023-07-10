@@ -57,7 +57,7 @@ function Restaurants(){
             11h - 21h30
             </p>
           </div>
-          <a className='button buttonGrey' href='https://jinjootest.zelty-order.fr/restaurants/3584'>CLICK & COLLECT</a>
+          <a className='button buttonGrey' href='https://jinjoo-ampere.zelty-order.fr/restaurants/3854'>CLICK & COLLECT</a>
           <a className='button' href='https://www.ubereats.com/fr/store/jin-joo-%7C-ampere/r1sfwldPUFmdLYad-NY01g?diningMode=DELIVERY&sc=SEARCH_SUGGESTION'>UBER EATS</a>
           <a className='button' href='https://deliveroo.fr/fr/menu/lyon/perrache/wao-lyon-ampere/'>DELIVEROO</a>
         </div>
