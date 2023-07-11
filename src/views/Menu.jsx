@@ -7,9 +7,9 @@ import MenuContentKimbap from '../components/MenuContentFormules';
 import MenuContentEntrees from '../components/MenuContentEntrees';
 import MenuContentDesserts from '../components/MenuContentDesserts';
 import MenuContentDrinks from '../components/MenuContentDrinks';
-import bibimbap from '../assets/images/bibimbapDessinMenu.webp';
-import mandu from '../assets/images/kimbapDessinMenu.webp';
-import hotteok from '../assets/images/hotteokDessinMenu.webp';
+import bibimbap from '../assets/images/imgMenuNotResponsive.jpg';
+import mandu from '../assets/images/imgMenuEntrees.png';
+import hotteok from '../assets/images/imgMenuDesserts.png';
 import Drinks from '../assets/images/FRESH_TEA.webp';
 import classNames from 'classnames';
 

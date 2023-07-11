@@ -62,8 +62,9 @@
 .left{
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     height: 100vh;
+    background: white;
 }
 
 .menuWrapper {
@@ -264,6 +265,8 @@
 .paraChoix {
     margin-bottom: 5px;
     color: black !important;
+    font-family: 'sugo_pro_display_light';
+    font-weight: lighter;
 }
 .paraChoixGris {
     color: black !important;
@@ -299,7 +302,7 @@
 }
 .plus {
     margin-bottom: 30px !important;
-    font-size: 50px !important;
+    font-size: 45px !important;
 }
 .plusFlex {
     display: flex;
@@ -332,6 +335,14 @@
 }
 .titreBoissons {
     font-size: 35px !important
+}
+
+.paraEntree {
+    color: #d2d2d2;
+    font-weight: lighter;
+}
+.menuWrapper {
+    margin-top: -30px;
 }
 @media (max-width: 1450px) {
     p.paraBibim,p.paraChoix{
@@ -683,6 +694,25 @@ h2>.h2Entree,p{
 }
 
 .active-tab-not-mobile>p{
-    color: black !important;
+    color: #d2d2d2 !important;
+    filter: invert(1);
 }
+
+.active-tab-not-mobile>.platsPartTwo {
+    margin-left: 150px;
+}
+
+.active-tab-not-mobile>.platsPartTwo>h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.active-tab-not-mobile>.platsPartTwo>p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'sugo_pro_display_light';
+    margin-top: 0 !important;
+}
+
+
 
