@@ -232,6 +232,7 @@
     z-index: 9;
     background: white;
     display: block;
+    border-bottom-left-radius: 5px;
 }
 .h3Menu {
     color: black !important;
