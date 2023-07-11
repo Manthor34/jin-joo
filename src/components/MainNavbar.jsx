@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import classNames from 'classnames';
 
@@ -15,11 +15,29 @@ const MainNavbar = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
-  // const navbarClasses = isMenuPage ? 'invertNav' : isRestaurantPage ? 'invertNav' : '';
   const navbarClasses = isRestaurantPage ? 'invertNav' : '';
   const containerClasses = isMenuPage && isMobileMenuOpen ? 'navbar-container navbar-bg' : 'navbar-container';
+
+  const [isDesktop, setIsDesktop] = useState(false);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const navBarClass = isDesktop && isMenuPage ? 'desktopMenuNav' : '';
+
   return (
-    <nav className={`${NavClassnames} ${navbarClasses}`}>
+    <nav className={`${NavClassnames} ${navbarClasses} ${navBarClass}`}>
       <div className={containerClasses}>
         <div className="navbar-logo">
         </div>
