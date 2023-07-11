@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import MenuContentBibimbap from '../components/MenuContentBibimbap';
 import MenuContentBibimbapParTwo from '../components/MenuContentBibimbapPartTwo';
 import MenuContentMandu from '../components/MenuContentMandu';
@@ -14,7 +13,6 @@ import Drinks from '../assets/images/FRESH_TEA.webp';
 import classNames from 'classnames';
 
 function Menu() {
-  const location = useLocation();
   const [activeTab, setActiveTab] = useState(1);
   const [leftDivImage, setLeftDivImage] = useState(bibimbap);
   const [isMobile, setIsMobile] = useState(false);
