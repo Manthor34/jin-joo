@@ -9,6 +9,7 @@ import circle from '../assets/images/circle.png';
 import dessin from '../assets/images/dessinBibimbap2.png';
 import bibimbap from '../assets/images/bibimbapDessinMenuSquare.png';
 
+
 function Noodle(){
   return (
     <>
@@ -21,9 +22,9 @@ function Noodle(){
         transportant dans un voyage culinaire.</p>
         <p className='paraTitre2'>Chaque jour, nous cuisinons nos propres recettes à partir de produits frais.</p>
         <h2 className='h2ko2'>비빔밥</h2>
-        <h2 className='h2'>le bibimbap, un plat qui vous veut du bien</h2>
         <img className='imgBgBbimbap' src={bibimbap} />
         <img className='imgBgBbimbap2' src={bibimbap} />
+        <h2 className='h2'>Le bibimbap, un plat qui vous veut du bien</h2>
         <div className='textContainer'>
           <div className='bimPara'>
             <img className='imgPara' src={yingYang} />

@@ -148,6 +148,7 @@ iframe {
     .mapRight {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
     }
     .map {
         width: 100vw;
@@ -155,36 +156,40 @@ iframe {
         margin-top: 300px;
     }
     .lieuxText {
-        width: 70vw;
+        width: 60vw;
         padding: 20px;
         align-items: center;
     }
     .lieuxText p {
         text-align: left;
+        margin-bottom: 10px;
     }
     .lieuxRight {
         width: 100vw;
     }
     .lieuxRight h4 {
-        font-size: 20px;
+        font-size: 30px;
     }
     .adress {
-        font-size: 15px;
+        font-size: 23px;
+        color: rgb(177, 177, 177);
+    }
+    .titreRestaurants {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     h1 {
-        font-size: 60px;
+        font-size: 40px;
+        line-height: 30px;
     }
     h2 {
-        font-size: 35px;
+        font-size: 27px;
     }
     .mapContainer h4 {
         margin-top: 300px;
     }
     iframe {
         height: 500px;
-    }
-    .mapRight a {
-        width: 100%;
     }
     .constructPara {
         font-size: 40px;
@@ -194,5 +199,26 @@ iframe {
         backdrop-filter: blur(5px);
         align-items: center;
         padding-top: 0;
+    }
+    iframe {
+        height: 150px !important;
+    }
+    .mapRight a {
+        width: 60vw;
+        height: 40px;
+        font-size: 20px;
+        margin-bottom: 5px !important;
+    }
+    .ampere.lieux {
+        margin-top: -20px;
+    }
+    .lieuxText h4 {
+        line-height: 20px;
+    }
+    .button {
+        width: 60vw;
+        height: 35px;
+        font-size: 25px;
+        margin: 5px;
     }
 }
