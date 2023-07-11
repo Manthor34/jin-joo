@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import MenuContentBibimbap from '../components/MenuContentBibimbap';
 import MenuContentBibimbapParTwo from '../components/MenuContentBibimbapPartTwo';
 import MenuContentMandu from '../components/MenuContentMandu';
@@ -10,14 +11,38 @@ import bibimbap from '../assets/images/bibimbapDessinMenu.webp';
 import mandu from '../assets/images/kimbapDessinMenu.webp';
 import hotteok from '../assets/images/hotteokDessinMenu.webp';
 import Drinks from '../assets/images/FRESH_TEA.webp';
+import classNames from 'classnames';
 
 function Menu() {
+  const location = useLocation();
   const [activeTab, setActiveTab] = useState(1);
   const [leftDivImage, setLeftDivImage] = useState(bibimbap);
+  const [isMobile, setIsMobile] = useState(false);
+
   const handleTabClick = (tabIndex, image) => {
     setActiveTab(tabIndex);
     setLeftDivImage(image);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const isDrinks = activeTab === 6 && <MenuContentDrinks />;
+  const MenuClassNames = classNames({
+    DrinksInvert: activeTab === 6,
+    NormalContent: activeTab !== 6,
+  });
 
   return (
     <>
@@ -66,31 +91,31 @@ function Menu() {
                 </li>
               </ul>
             </div>
-            <div className="menuContent">
-              <div className={activeTab === 1 ? 'active-tab' : 'inactive-tab'}>
+            <div className={`menuContent ${MenuClassNames}`}>
+              <div className={classNames({ [`active-tab${isMobile ? '-mobile' : '-not-mobile'}`]: (activeTab === 1), 'inactive-tab': (activeTab !== 1) })}>
                 {activeTab === 1 && <MenuContentBibimbap />}
               </div>
-              <div className={activeTab === 2 ? 'active-tab' : 'inactive-tab'}>
-                {activeTab === 2 && <MenuContentMandu />}
+              <div className={classNames({ [`active-tab${isMobile ? '-mobile' : '-not-mobile'}`]: (activeTab === 2), 'inactive-tab': (activeTab !== 2) })}>
+                {activeTab === 2 && <MenuContentMandu isMobile={isMobile} />}
               </div>
-              <div className={activeTab === 3 ? 'active-tab' : 'inactive-tab'}>
+              <div className={classNames({ [`active-tab${isMobile ? '-mobile' : '-not-mobile'}`]: (activeTab === 3), 'inactive-tab': (activeTab !== 3) })}>
                 {activeTab === 3 && <MenuContentKimbap />}
               </div>
-              <div className={activeTab === 4 ? 'active-tab' : 'inactive-tab'}>
+              <div className={classNames({ [`active-tab${isMobile ? '-mobile' : '-not-mobile'}`]: (activeTab === 4), 'inactive-tab': (activeTab !== 4) })}>
                 {activeTab === 4 && <MenuContentEntrees />}
               </div>
-              <div className={activeTab === 5 ? 'active-tab' : 'inactive-tab'}>
+              <div className={classNames({ [`active-tab${isMobile ? '-mobile' : '-not-mobile'}`]: (activeTab === 5), 'inactive-tab': (activeTab !== 5) })}>
                 {activeTab === 5 && <MenuContentDesserts />}
               </div>
-            </div>
-            <div className="RightPartTwo">
-                <div className={activeTab === 1 ? 'active-tab' : 'inactive-tab'}>
-                  {activeTab === 1 && <MenuContentBibimbapParTwo />}
-                </div>
-                <div className={activeTab === 6 ? 'active-tab' : 'inactive-tab'}>
+              <div className={classNames({ [`active-tab${isMobile ? '-mobile' : '-not-mobile'}`]: (activeTab === 6), 'inactive-tab': (activeTab !== 6) })}>
                 {activeTab === 6 && <MenuContentDrinks />}
               </div>
             </div>
+        <div className="RightPartTwo">
+          <div className={classNames({ [`active-tab${isMobile ? '-mobile' : '-not-mobile'}`]: (activeTab === 1), 'inactive-tab': (activeTab !== 1) })}>
+            {activeTab === 1 && <MenuContentBibimbapParTwo />}
+          </div>
+        </div>
           </div>
         </div>
     </>

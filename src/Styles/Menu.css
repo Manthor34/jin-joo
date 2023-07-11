@@ -358,6 +358,7 @@
       .menuNav{
         filter: invert(1);
       }
+
       .right{
         background-color: black !important;
         color: white;
@@ -369,7 +370,8 @@
     
     
       section.platsPartTwo{
-        background-color: aqua !important; 
+        background-color: white !important; 
+        color: black;
       }
       
     .bap {
@@ -453,3 +455,34 @@
     text-decoration: underline;
   }
  
+.DrinksInvert{
+    background-color: white;
+}
+
+h2.teaMargin.titreBoissons{
+    color: black !important;
+}
+
+h2>.h2Entree,p{
+    color: white !important;
+}
+
+.platsPartTwo>p{
+    color: black !important;
+}
+
+.plusFlex>div>p{
+    color: black !important;
+}
+
+.sauces>.sauce2>p{
+    color: black !important;
+}
+
+.sauces>.sauce>p{
+    color: black !important;
+}
+
+.active-tab-not-mobile>p{
+    color: black !important;
+}

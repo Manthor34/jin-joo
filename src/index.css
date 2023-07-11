@@ -284,3 +284,8 @@ nav li {
 .invertNav {
   filter: invert(1);
 }
+
+.menu-btn {
+  background-color: white;
+  border-radius: 2px;
+}
