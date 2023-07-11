@@ -70,7 +70,7 @@ function Restaurants(){
           <div className='lieuxText'>
             <h4>JIN JOO OPÉRA <br/>
             <span className='adress'>4 rue de la République, 69001 LYON</span></h4>
-            <p>Ouverture prochaine</p>
+            <p>Ouverture fin juillet</p>
             {/* <p>lundi : <span className='number'>11h - 22h</span><br/>
             mardi : <span className='number'>11h - 22h</span><br/>
             mercredi : <span className='number'>11h - 22h</span><br/>

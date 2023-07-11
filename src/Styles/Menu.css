@@ -235,7 +235,7 @@
 }
 .h3Menu {
     color: black !important;
-    font-size: 30px !important;
+    font-size: 30px;
 }
 .marginBoissons {
     margin-top: 15px;
@@ -346,33 +346,33 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-      }
+    }
       
-      .plusFlex > div {
+    .plusFlex > div {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 10px;
-      }
-      .menuNav{
+    }
+    .menuNav{
         filter: invert(1);
-      }
+    }
 
-      .right{
+    .right{
         background-color: black !important;
         color: white;
-      }
+    }
 
-     .bap,.bap h2{
+    .bap,.bap h2{
         filter: invert(1);
-     }
+    }
     
     
-      section.platsPartTwo{
+    section.platsPartTwo{
         background-color: white !important; 
         color: black;
-      }
+    }
       
     .bap {
         flex-direction: column;
@@ -424,30 +424,230 @@
     .h2MarginTitle {
         font-size: 25px !important;
     }
-
-    @media (max-width: 1450px) {
-        .left {
-            display: none;
-        }
-        .right {
-            width: 100vw;
-        }
-        .menuNav button {
-            font-size: 25px;
-        }
-        .menuNav {
-            width: 100vw;
-        }
-        .menuNav li {
-            margin: 30px;
-        }
-        .menuNav ul {
-            overflow-x: scroll;
-            margin-right: 20px;
-        }
         
+    .left {
+        display: none;
     }
+    .right {
+        width: 100vw;
+    }
+    .menuNav button {
+        font-size: 25px;
+    }
+    .menuNav {
+        width: 100vw;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .menuNav li {
+        margin: 30px;
+    }
+    .menuNav ul {
+        overflow-x: scroll;
+        margin-right: 20px;
+    }
+        
 } 
+@media (max-width: 768px) {
+    .englishTextMenuNav {
+        font-size: 25px !important;
+        font-weight: bold;
+    }
+    .menuWrapper {
+        margin-top: -30px;
+    }
+    .sauces {
+        margin-bottom: 0 !important;
+        padding-bottom: 30px;
+    }
+    .hrMenu {
+        width: 80%;
+    }
+    .menuNav {
+        margin-left: 0;
+    }
+    .menuNav ul {
+        margin: 0 !important;
+    }
+    .menuNav li {
+        margin: 5px;
+    }
+    .menuTitle {
+        font-size: 40px !important;
+        margin: auto;
+        margin-top: 40px;
+        width: 80px;
+        font-family: 'Sugo_Pro_Display';
+        font-weight: bold !important;
+    }
+    .menuKoreanTitle {
+        font-size: 30px !important;
+        margin-left: 5px;
+    }
+    .bibimbapMenuImg {
+        width: 300px;
+    }
+    .bibimbapMenuImg2 {
+        width: 300px;
+    }
+    .menuContent {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .bapPara {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .bimh2 {
+        font-size: 35px !important;
+    }
+    .koreanMenu {
+        font-size: 30px !important;
+    }
+    .paraBibim {
+        font-size: 25px !important;
+        width: 90vw !important;
+    }
+    .paraChoix {
+        width: 90vw !important;
+        font-weight: lighter;
+        font-size: 20px !important;
+    }
+
+    .platsPartTwo {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sakura {
+        display: none;
+    }
+    .platsPartTwo>p {
+        font-weight: lighter;
+        width: 90vw;
+        margin-top: 0 !important;
+        font-size: 18px;
+        font-family: 'sugo_pro_display_light';
+    }
+    .platsPartTwo>h2 {
+        margin-bottom: 0;
+        width: 100vw;
+    }
+    .plus {
+        font-size: 40px !important;
+        margin-top: 30px;
+        margin-bottom: 30px !important;
+    }
+    .h3Plus {
+        font-size: 30px !important;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .plusFlex>div {
+        margin: 0;
+    }
+    .plusFlex>div>p {
+        margin-top: 0;
+        font-size: 20px;
+        font-family: 'sugo_pro_display_light';
+        font-weight: lighter;
+    }
+    .sauces {
+        align-items: center;
+    }
+    .sauces>.sauce>p {
+        font-family: 'sugo_pro_display_light';
+        font-weight: lighter;
+        font-size: 20px;
+        margin-top: 0;
+        width: 80%;
+    }
+    .sauce {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pim1 {
+        margin-right: -30px;
+    }
+    .pim2 {
+        margin-right: -50px;
+    }
+    .chikinMenuImg {
+        margin-left: 10px !important;
+    }
+    .manduMenuImg {
+        margin-left: 115px !important;
+    }
+    .paraEntree {
+        font-size: 20px !important;
+        font-weight: lighter;
+        color: #d2d2d2 !important;
+    }
+    .h2Entree {
+        margin-top: 20px;
+        font-size: 30px !important;
+    }
+    .active-tab-mobile {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .DrinksInvert>.active-tab-mobile {
+
+    }
+    .titreBoissons {
+        /* filter: invert(1); */
+        line-height: 30px;
+        font-size: 30px !important;
+    }
+    .titreBoissons2 {
+        filter: invert(1);
+    }
+    .boisson3 {
+        font-family: 'sugo_pro_display_light'!important;
+        font-size: 20px;
+        margin-bottom: 20px !important;
+    }
+    .boisson2 {
+        font-size: 20px !important;
+    }
+    .menuContent h3 {
+        font-size: 25px !important;
+    }
+    .boissons {
+        text-align: left;
+        background: white;
+        width: 100vw;
+        padding-left: 60px;
+    }
+}
+
+.active-tab-not-mobile>.platsPartOne>.bap>.bapPara>.bibimbapMenuImg, .bibimbapMenuImg2{
+    display: none;
+}
+.active-tab-mobile>.platsPartOne>.bap>.bapPara>.bibimbapMenuImg{
+    display: block;
+}
+.active-tab-mobile>.platsPartOne>.bap>.bapPara>.bibimbapMenuImg2{
+    display: block;
+}
+
+.active-tab-not-mobile>.imgEntree {
+    display: none;
+}
+.active-tab-mobile>.imgEntree {
+    display: block;
+    filter: invert(1);
+}
+.active-tab-mobile {
+    text-align: center;
+}
 
 
 /* Underline for english text only on menuNav */
@@ -468,21 +668,21 @@ h2>.h2Entree,p{
 }
 
 .platsPartTwo>p{
-    color: black !important;
+    color: #d2d2d2 !important;
+    filter: invert(1);
 }
 
 .plusFlex>div>p{
-    color: black !important;
-}
-
-.sauces>.sauce2>p{
-    color: black !important;
+    color: #d2d2d2 !important;
+    filter: invert(1);
 }
 
 .sauces>.sauce>p{
-    color: black !important;
+    color: #d2d2d2 !important;
+    filter: invert(1);
 }
 
 .active-tab-not-mobile>p{
     color: black !important;
 }
+

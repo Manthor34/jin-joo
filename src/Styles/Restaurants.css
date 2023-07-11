@@ -125,7 +125,7 @@ iframe {
 }
 .lieuxText p{
     font-size: 25px;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     margin-bottom: 40px;
 }
 .adress{

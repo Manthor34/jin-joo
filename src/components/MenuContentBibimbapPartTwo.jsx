@@ -16,7 +16,6 @@ const MenuContentBibimbapParTwo = () => {
         POULET FRIT CORÉEN : morceaux de poulet croustillants, marinés dans une sauce soja, ail et gingembre frais, panés, puis frits.
         </p>
         <h2><img className='sakura' src={sakura} alt=''/>PORK SSAMJANG <span className='koreanMenu'>돼지고기</span><img className='piment' src={piment}/><img className='piment' src={piment}/></h2>
-        <h3>porc mariné</h3>
         <p>
         PORC MARINÉ : émincé de porc aux oignons, mariné dans une sauce épicée à base de pâte ssamjang, sésame, ail et gingembre, puis cuit à feu vif à la marmite.
         </p>
@@ -47,16 +46,16 @@ const MenuContentBibimbapParTwo = () => {
         <hr className='hrMenu'/>
         <h2 className='plus'>SAUCES AU CHOIX</h2>
         <div className='sauces'>
-            <div className='sauce2'>
+            <div className='sauce'>
                 <h3 className='h3Plus'>GANJANG</h3>
                 <p>sauce soja, vinaigre de riz, miel, avec ou sans sésame</p>
             </div>
-            <div className='sauce2'>
-                <h3 className='h3Plus'>SSAMJANG <img className='piment' src={piment}/></h3>
+            <div className='sauce'>
+                <h3 className='h3Plus pim1'>SSAMJANG <img className='piment' src={piment}/></h3>
                 <p>huile de sésame, ail, gochujang, doenjang</p>
             </div>
             <div className='sauce'>
-                <h3 className='h3Plus'>GOCHUJANG <img className='piment' src={piment}/><img className='piment' src={piment}/></h3>
+                <h3 className='h3Plus pim2'>GOCHUJANG <img className='piment' src={piment}/><img className='piment' src={piment}/></h3>
                 <p>huile de sésame grillé, sauce soja, gochujang</p>
             </div>
         </div>
