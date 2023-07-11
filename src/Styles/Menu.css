@@ -64,7 +64,6 @@
     background-size: contain;
     background-repeat: no-repeat !important;
     height: 100vh;
-    background: white;
 }
 
 .menuWrapper {
@@ -226,10 +225,10 @@
 
 .navbar-bg {
     position: fixed;
-    right: 0;
+    right: 15px;
     top: 0;
-    width: 250px;
-    height: 300px;
+    width: 245px;
+    height: 305px;
     z-index: 9;
     background: white;
     display: block;
@@ -311,7 +310,9 @@
     margin-right: 130px;
 }
 .h3Plus {
-    font-size: 35px !important;
+    font-size: 30px !important;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .hrMenu {
     border-top: 2px solid black;
@@ -674,7 +675,7 @@ h2.teaMargin.titreBoissons{
     color: black !important;
 }
 
-h2>.h2Entree,p{
+h2>.h2Entree{
     color: white !important;
 }
 
@@ -712,6 +713,21 @@ h2>.h2Entree,p{
     font-weight: lighter;
     font-family: 'sugo_pro_display_light';
     margin-top: 0 !important;
+}
+
+.active-tab-not-mobile>.platsPartTwo>.plusFlex>div>p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'sugo_pro_display_light';
+    margin-top: 0 !important;
+}
+
+.active-tab-not-mobile>.platsPartTwo>.sauces>.sauce>p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'sugo_pro_display_light';
+    margin-top: 0 !important;
+    width: 80%;
 }
 
 

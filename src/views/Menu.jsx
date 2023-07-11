@@ -6,10 +6,10 @@ import MenuContentKimbap from '../components/MenuContentFormules';
 import MenuContentEntrees from '../components/MenuContentEntrees';
 import MenuContentDesserts from '../components/MenuContentDesserts';
 import MenuContentDrinks from '../components/MenuContentDrinks';
-import bibimbap from '../assets/images/imgMenuNotResponsive.jpg';
+import bibimbap from '../assets/images/imgMenuNotResponsive.png';
 import mandu from '../assets/images/imgMenuEntrees.png';
 import hotteok from '../assets/images/imgMenuDesserts.png';
-import Drinks from '../assets/images/FRESH_TEA.webp';
+import Drinks from '../assets/images/blankDrinks.png';
 import classNames from 'classnames';
 
 function Menu() {
